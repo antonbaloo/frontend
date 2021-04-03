@@ -1,11 +1,45 @@
+@import "./partials/article/article.scss";
 body * {
   outline: 1px solid lightgrey;
 }
 .container  {
   max-width: 1200px;
   margin: 0 auto;
-  height: 100px;
+  padding: 50px 0;
 }
 footer {
   background-color: #fb9c06;
+}
+.two-colums {
+  display: flex ;
+}
+.two-colums__item { 
+  width: 50%;
+}
+
+.four-colums {
+  display: flex;
+}
+.four-colums__item{
+  width: 25%;
+  text-align: justify;
+  padding: 5px;
+
+}
+.float-wrapper {
+  border: 10wpx solid tomato;
+}
+
+.float {
+  border: 1px solid green;
+  width: 150px;
+  height: 150px;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left
 }

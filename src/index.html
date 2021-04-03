@@ -11,18 +11,76 @@
     <header>
       <div class="container">
 HEader
-      </div>
     </header>
     <div class="banner">
       <div class="container">
-Banner
+        Banner
       </div>
-      <main class="container">
-container
+    </div> 
+    <main class="container">
+      main container
+        <div class="two-colums">
+          <div class="two-colums__item">
+             @@include(
+               './partials/article/_article.html'
+               {
+                 "articletext": "Lorem"
+               }
+              )
+          </div>
+          <div class="two-colums__item">
+             @@include(
+               './partials/article/_article.html'
+               {
+                 "articletext": "Lorem"
+               }
+              )
+          </div>
+        </div>
+        <div class="four-colums">
+          <div class="four-colums__item">
+              @@include(
+                './partials/article/_article.html'
+                {
+                  "articletext": Lorem"
+                }
+              )
+          </div>
+          <div class="four-colums__item">
+              @@include(
+                './partials/article/_article.html'
+                {
+                  "articletext": Lorem"
+                }
+              )
+          </div>
+          <div class="four-colums__item">
+              @@include(
+                './partials/article/_article.html'
+                {
+                  "articletext": Lorem"
+                }
+              )
+          </div>
+          <div class="four-colums__item">
+              @@include(
+                './partials/article/_article.html'
+                {
+                  "articletext": Lorem"
+                }
+              )
+          </div>
+        </div>
+        <div>
+          <div class="float float-left">FLoat left</div>
+          <div class="float float-right"> Float right </div>
+          <div class="float float-right"> Float right </div>
+          <div class="float float-right"> Float right </div>
+        </div>
       </main>
       <footer>
         <div class="container">
-Footer
+          Footer
         </div>
       </footer>
     </div>
