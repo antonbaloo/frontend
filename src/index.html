@@ -8,11 +8,11 @@
     <script src="./js/main.js" defer></script>
   </head>
   <body>
-    <header>
-      <div class="container">
-HEader
-    </header>
-    <div class="banner">
+  <header>
+    <div class="container">
+      HEader
+  </header>
+  <div class="banner">
       <div class="container">
         Banner
       </div>
@@ -63,20 +63,29 @@ HEader
               )
           </div>
           <div class="four-colums__item">
-              @@include(
-                './partials/article/_article.html'
-                {
-                  "articletext": Lorem"
-                }
-              )
+            @@include(
+              './partials/article/_article.html'
+              {
+                "articletext": Lorem"
+              }
+            )
           </div>
         </div>
-        <div>
-          <div class="float float-left">FLoat left</div>
-          <div class="float float-right"> Float right </div>
-          <div class="float float-right"> Float right </div>
-          <div class="float float-right"> Float right </div>
-        </div>
+        <section class="section">
+          <header class="header">
+            Meat the team
+          </header>
+          <div class="three-colums">
+            <div class="three-colums__item">1</div>
+            <div class="three-colums__item">2</div>
+            <div class="three-colums__item">3</div>
+          </div>
+        </section>
+        <section class="section">
+          <header class="header dots">
+           Send Us message
+          </header>
+        </section>
       </main>
       <footer>
         <div class="container">

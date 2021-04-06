@@ -42,7 +42,7 @@ footer {
   padding: 5px; }
 
 .float-wrapper {
-  border: 10wpx solid tomato; }
+  border: 20wpx solid tomato; }
 
 .float {
   border: 1px solid green;
@@ -50,9 +50,23 @@ footer {
   height: 150px; }
 
 .float-right {
-  float: right; }
+  float: right;
+  background-color: blue; }
 
 .float-left {
-  float: left; }
+  float: left;
+  background-color: green; }
+
+.header {
+  padding: 40px 0 15px 0;
+  color: #fb9c06;
+  text-align: center;
+  font-size: 26px;
+  text-decoration: underline; }
+
+.header.dots:after {
+  content: "...";
+  display: inline-block;
+  text-decoration: underline; }
 
 /*# sourceMappingURL=maps/main.css.map */
