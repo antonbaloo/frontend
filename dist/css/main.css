@@ -16,6 +16,14 @@
   margin: 5px;
   padding: 5px; }
 
+.team-card__header {
+  color: #6e6d6b;
+  font-size: 22px;
+  margin-bottom: 20px; }
+
+.team-card__position {
+  color: #fcb544; }
+
 body * {
   outline: 1px solid lightgrey; }
 
@@ -32,6 +40,13 @@ footer {
 
 .two-colums__item {
   width: 50%; }
+
+.three-colums {
+  display: flex; }
+
+.three-colums__item {
+  width: 33.3%;
+  padding: 0 50px 0 50px; }
 
 .four-colums {
   display: flex; }
