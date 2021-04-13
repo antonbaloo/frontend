@@ -8,23 +8,34 @@
     <script src="./js/main.js" defer></script>
   </head>
   <body>
-    <div class="main-container">
-      <div class="header"> 
+      <section>
+        <header> 
+          <h2>Position relative</h2>
+        </header>
+        <div class="blocks red"></div>
+        <div class="blocks green relative"></div>
+        <div class="blocks blue"></div>
+      </section>
+      <div>
+        <span class="required">required field</span>
       </div>
-      <div class="two-colums">
-        
-        <div class="two-colums__item"></div>
-        <div class="two-colums__item"></div>
+      <div class="section">
+        <button class="btn-submmit">Submmit</button>
+        <span> Hello World</span>
       </div>
-      <div class="three-blocks">
-        <div class="three-blocks__red"></div>
-        <div class="three-blocks__blue"></div>
-        <div class="three-blocks__yellow"></div>
-      </div>
-      <div class="footer">  
-        
-      </div>
-    </div>    
+      <section class="absolute-wrapper">
+        <header> 
+          <h2>
+            Position absolute
+          </h2>
+        </header>
+        <div class="blocks red"></div>
+        <div class="blocks blue absolute"></div>
+        <div class="blocks green"></div>
+        <p class="tooltip" data-tip="PLS go to readme"> 
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat quae eos corporis impedit perferendis magnam quisquam enim sequi totam tempora fugiat odit laborum tenetur, optio magni accusamus, aliquid eaque sed.
+        </p>
+      </section>
   </body>
 </html>
 

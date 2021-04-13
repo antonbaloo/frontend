@@ -2,6 +2,109 @@ body * {
   outline: 1px solid lightgrey;
 }
 
-.main-container {
-  padding: 20px 26px 20px;
+.section {
+  padding: 50px 0;
+}
+
+.blocks {
+  height: 200px;
+  width: 50%;
+  margin: 0 auto;;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.required {
+  font-size: 30px;
+}
+ 
+.required::before {
+  content: '*';
+  display: inline;
+  color: red;
+  position: relative;
+  bottom: 5px;
+  left: 5px;
+}
+
+.btn-submmit {
+  padding: 10px;
+  font-size: 18px;
+  font-weight:bold ;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: top 5s ease;
+ // background-color: blue;
+}
+
+.btn-submmit:hover {
+background-color: tomato;
+top: 15px;
+left: 15px;
+}
+
+.relative {
+  position: relative;
+  top: 150px;
+  left: 100px;
+}
+
+.absolute-wrapper {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.tooltip {
+  position: relative;
+  width: 50%;
+}
+
+.tooltip::after {
+  //content: attr(data-tip);
+  display: inline-block; 
+  border: 2px solid lightgray;
+  padding: 5px 10px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: calc(100% + 15px);
+  left: calc(100% + 15px);
+  width: 80%;
+  //background-color: rgba(255, 255, 255, .5);
+  background-image: url(https://www.humanrightslogo.net/sites/default/files/HRLogoCMYKsmallRGB.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.tooltip:hover:before {
+  content: '';
+  width: 0;
+height: 0;
+border-style: solid;
+border-width: 10px 10px 0 10px;
+border-color: lightgray transparent transparent transparent;
+position: absolute;
+bottom: calc(100% + 5px);
+left: calc(100% + 30px);
+
+}
+
+.tooltip:hover:after {
+content: attr(data-tip);
 }
