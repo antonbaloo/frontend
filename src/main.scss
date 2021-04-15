@@ -3,5 +3,58 @@ body * {
 }
 
 .main-container {
-  padding: 20px 26px 20px;
+  padding: 26px 20px 0px 20px;
 }
+
+.header {
+width: 35%;
+margin: 0 auto;
+height: 50px;
+background-color:#358765 ;
+}
+ .two-colums {
+   display: flex;
+ }
+
+ .two-colums__item {
+   width: 50%;
+  padding: 34px;
+  box-sizing: border-box;
+ }
+ .box-bc-green {
+   background-color: green;
+   height: 150px;
+ }
+
+ .three-blocks {
+   font-size: 0px;
+  }
+
+ .three-blocks__red {
+   display: inline-block;
+   background-color: red;
+   height: 147px;
+   width: 33.3%;
+ }
+ 
+ .three-blocks__blue {
+   display: inline-block;
+   background-color: blue;
+   height: 147px;
+   width: 33.3%;
+ }
+
+ .three-blocks__yellow {
+   display: inline-block;
+   background-color: yellow;
+   height: 147px;
+   width: 33.3%;
+ }
+
+ .footer  {
+   margin: 34px auto;
+   height: 55px;
+   background-color: #C4C4C4;
+   
+
+ }
