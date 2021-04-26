@@ -2,23 +2,31 @@ body * {
   outline: 1px solid lightgrey;
 }
 
+
+.page{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .header {
   height: 100px;
   background-color: lightblue;
-  border: bold red 1px;
-  text-align: center;
+}
+
+.main {
+  width: 100px;
+  height: 100px;
+  background-color: lightpink;
+}
+
+.footer{
+  height: 100px;
+  width:: 100%;
+  background-color: lightblue; 
+  flex: 0 0  auto;
 }
 
 .footer {
-  height: 100px;
-  width:: 100%;
-  background-color: lightblue;
-  border: bold red 1px;
-  text-align: center;  
-}
-
-
-.footer>header{
-  position: absolute;
-  top: 100%;
+  margin-top: auto;
 }
