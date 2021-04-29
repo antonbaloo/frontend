@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@include 
+@import "./partials/article/article.scss";
 
 body * {
   outline: 1px solid lightgrey;
