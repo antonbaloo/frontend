@@ -106,3 +106,26 @@ body * {
   text-align: justify;
   padding: 5px;
 }
+
+.meet {
+  padding: 10px;
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+  color: #fb9c06;
+  font-size: 40px;
+  font-family:'calibri';
+  font-weight: 100;
+
+}
+
+.tree-colums {
+  display: flex;
+  flex-wrap: ;
+}
+
+.three-colums__item {
+  display: block;
+  width: 33%;
+
+}
