@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import "./partials/article/article.scss";
+@import "./partials/Header/logostyle.scss";
+
 
 body * {
   outline: 1px solid lightgrey;
@@ -12,6 +14,31 @@ body * {
   //font-size: 0;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  height:120px;
+}
+
+.logoname {
+  display: flex;
+  height: 100px;
+}
+
+.logo {
+  height: 120px;
+  width: 100px;
+  background-image: url('./img/Rabbitlogo.png');
+  background-position: center;
+}
+
+.name {
+  max-width: max-content;
+  height: 125px;
+  margin-left: 45px;
+}
+
+
 .banner {
   width: 100%;
   height: 405px;
@@ -23,7 +50,7 @@ body * {
 
 .slogan {
   position: relative;
-  margin: 128px 100px 30px;
+  margin-top: 125px;
   //display: inline-block;
   //block-size: border-box;
   display: flex;
