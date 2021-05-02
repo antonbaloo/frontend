@@ -1,3 +1,15 @@
 body * {
   outline: 1px solid lightgrey;
 }
+
+.fox {
+  width: 50%;
+  height: 50%;
+  
+}
+
+.fox::after {
+ content: 'asdasd';
+ color: white;
+ 
+}
