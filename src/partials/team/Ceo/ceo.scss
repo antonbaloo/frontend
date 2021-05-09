@@ -1,0 +1,32 @@
+.text-ceo {
+    color: #fb9c06;
+    font-family: 'calibri';
+    font-size: 22px;
+    text-align: center;
+}
+
+.text-ceo::before {
+    content: 'Nibs';
+    font-size: 22px;
+    font-family: 'colibri';
+    color: black;
+}
+
+.pict-ceo {
+    height: 320px;
+    width: 320px;
+    margin: 20px auto;
+    background-image: url(https://www.popsci.com/app/uploads/2020/07/20/W2NSRFJ7ZZBT3OMTMN2ZTGREJE.jpg);
+    border-radius: 50%;
+    border: 6px solid #ffb53f;
+    background-position: center;
+    background-size: cover;
+}
+
+.description-ceo{
+    font-size: 15px;
+    font-family: 'calibri -light';
+    width: 80%;
+    margin: 15px auto;
+    line-height: 1.5;
+}

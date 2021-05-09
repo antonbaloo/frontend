@@ -1,0 +1,32 @@
+.textdes {
+    color: #fb9c06;
+    font-family: 'calibri';
+    font-size: 22px;
+    text-align: center;
+}
+
+.textdes::before {
+    content: 'Hoof';
+    font-size: 22px;
+    font-family: 'colibri';
+    color: black;
+}
+
+.pictdes {
+    height: 320px;
+    width: 320px;
+    margin: 20px auto;
+    background-image: url(https://cdn.tsln.com/wp-content/uploads/sites/13/2017/01/Front-Relaxed-823x1240.jpg);
+    border-radius: 50%;
+    border: 6px solid #ffb53f;
+    background-position: center;
+    background-size: cover;
+}
+
+.descriptiondes{
+    font-size: 15px;
+    font-family: 'calibri -light';
+    width: 80%;
+    margin: 15px auto;
+    line-height: 1.5;
+}

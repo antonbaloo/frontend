@@ -3,6 +3,9 @@
 @import "./partials/Header/logostyle.scss";
 @import "./partials/SPrites/sprite.scss";
 @import "./partials/SPrites/menu-item.scss";
+@import "./partials/team/DEsigner/designer.scss";
+@import "./partials/team/Ceo/ceo.scss";
+@import "./partials/team/developer/developer.scss";
 
 
 body * {
@@ -10,7 +13,7 @@ body * {
 }
 
 .content  {
-  max-width: 80%;
+  max-width: 1200px;
   margin: 0 10%;
   //padding: 30px ;
   //font-size: 0;
@@ -20,11 +23,13 @@ body * {
   display: flex;
   justify-content: space-between;
   height:120px;
+  width: 100%;
 }
 
 .logoname {
   display: flex;
-  height: 100px;
+  height: 100%;
+
 }
 
 .logo {
@@ -116,15 +121,106 @@ body * {
   font-size: 40px;
   font-family:'calibri';
   font-weight: 100;
+  letter-spacing: 3px;
 
 }
 
-.tree-colums {
+.three-colums {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
 }
 
 .three-colums__item {
-  display: block;
   width: 33%;
+}
 
+.headline-contact {
+  text-align: center;
+  margin: 25px auto;
+  color: #ffaf11;
+  font-family: 'calibri';
+  font-size: 40px;
+  text-decoration: underline;
+  letter-spacing: 3px;
+}
+
+.personal-data {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 135px 1fr;
+  grid-gap: 2vw;
+  grid-template-areas: 
+            "data_name data_name-input"
+            "data_email data_email-input"
+            "data_message data_message-input"
+            "data_message data_message-input";
+
+}
+
+.data_name {
+  grid-area: data_name;
+  color: #fb9c06;
+  font-size: 24px;
+  font-family: 'colibri';
+  letter-spacing: 1.5px;
+
+}
+
+.data_name-input {
+  grid-area: data_name-input;
+  background-color: #f7f6f5;
+  border-top: 2px solid #d2d0cf;
+  border-left: 4px solid #d2d0cf;
+
+}
+
+.data_email {
+  grid-area: data_email;
+  color: #fb9c06;
+  font-size: 24px;
+  font-family: 'colibri';
+  letter-spacing: 1.5px;
+}
+ 
+.data_email-input {
+grid-area: data_email-input;
+background-color: #f7f6f5;
+border-top: 2px solid #d2d0cf;
+border-left: 4px solid #d2d0cf;
+
+}
+
+.data_message {
+  grid-area: data_message;
+  color: #fb9c06;
+  font-size: 24px;
+  font-family: 'colibri';
+  letter-spacing: 1.5px;
+
+}
+
+.data_message-input {
+  grid-area: data_message-input;
+  background-color: #f7f6f5;
+  border-top: 2px solid #d2d0cf;
+  border-left: 4px solid #d2d0cf;
+}
+
+.button-submit {
+  float: right;
+  text-align: center;
+  width: 175px;
+  height: 50px;
+  border-bottom: 2px solid #cc830f;
+  margin: 20px 20px;
+  background-color: #ffaf11;
+  font-size: 30px;
+  font-family: 'colibri';
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  line-height: 50px;
+  
 }

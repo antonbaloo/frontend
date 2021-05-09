@@ -1,0 +1,32 @@
+.text-dev {
+    color: #fb9c06;
+    font-family: 'calibri';
+    font-size: 22px;
+    text-align: center;
+}
+
+.text-dev::before {
+    content: 'Squawk';
+    font-size: 22px;
+    font-family: 'colibri';
+    color: black;
+}
+
+.pict-dev {
+    height: 320px;
+    width: 320px;
+    margin: 20px auto;
+    background-image: url(https://komionline.ru/uploads/2016/09/node_74893_1.jpg);
+    border-radius: 50%;
+    border: 6px solid #ffb53f;
+    background-position: center;
+    background-size: cover;
+}
+
+.description-dev{
+    font-size: 15px;
+    font-family: 'calibri -light';
+    width: 80%;
+    margin: 15px auto;
+    line-height: 1.5;
+}
