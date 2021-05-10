@@ -24,6 +24,7 @@ body * {
   justify-content: space-between;
   height:120px;
   width: 100%;
+  flex-wrap: nowrap;
 }
 
 .logoname {
@@ -198,7 +199,6 @@ border-left: 4px solid #d2d0cf;
   font-size: 24px;
   font-family: 'colibri';
   letter-spacing: 1.5px;
-
 }
 
 .data_message-input {
@@ -206,10 +206,10 @@ border-left: 4px solid #d2d0cf;
   background-color: #f7f6f5;
   border-top: 2px solid #d2d0cf;
   border-left: 4px solid #d2d0cf;
+  list-style: none;
 }
 
 .button-submit {
-  float: right;
   text-align: center;
   width: 175px;
   height: 50px;
@@ -222,5 +222,19 @@ border-left: 4px solid #d2d0cf;
   letter-spacing: 2px;
   font-weight: lighter;
   line-height: 50px;
+  margin-left: 80%;
+  
+}
+
+.footer {
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  padding: auto;
+  font-family: 'calibri';
+  font-size: 33px;
+  color: #fff;
+  background-color: #fb9c06;
+  letter-spacing: 2px;
   
 }
