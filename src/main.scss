@@ -2,14 +2,12 @@ body * {
   outline: 1px solid lightgrey;
 }
 
-.fox {
-  width: 50%;
-  height: 50%;
-  
-}
+.form {
+display: flex;
+flex-direction: column;
 
-.fox::after {
- content: 'asdasd';
- color: white;
- 
+&__input {
+  font-size: 16px;
+  padding: 5px 8px;
+}
 }
