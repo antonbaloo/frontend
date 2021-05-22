@@ -2,12 +2,119 @@ body * {
   outline: 1px solid lightgrey;
 }
 
+body {
+  padding-bottom: 50px;
+}
 .form {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-&__input {
-  font-size: 16px;
-  padding: 5px 8px;
+  &__input {
+    font-size: 16px;
+    padding: 5px 8px;;
+  }
+
+  &__submit {
+    background-color: #fff;
+  }
+
+  &__text-input {
+    padding: 5px 7px;
+    border-radius: 5px;
+    font-weight: bold;
+
+    &:focus,
+    &:active {
+      border-color: blue;
+    }
+    &.error {
+      border-color: red;
+    }
+  }
 }
+
+.input {
+  &__input {
+    display: none;
+    width: 1px;
+    height: 1px;
+    clip: rect(0, 0, 0, 0);
+    position: relative;
+    top: -1px;
+    left: -1px;
+    margin: -1px;
+  }
+
+  &__label {
+    display: inline-block;
+    font-size: 20px;
+   // padding: 20px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+
+    &::before{
+      content: '';
+      width: 20px;
+      height: 20px;
+      box-sizing: border-box;
+      border: 3px solid tomato;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &::after{
+    //  content: '';
+      width: 10px;
+      height: 10px;
+      box-sizing: border-box;
+      background-color: tomato;
+      border-radius: 50%;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+    }
+
+  }
+
+
 }
+
+.input__input:checked + .input__label::after {
+  content: '';
+}
+
+.accordion {
+  &__status--open,
+  &__status--close {
+    display: none;
+  }
+
+  &__action--open,
+  &__action--close {
+    display: block;
+  }
+
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s linear;
+
+  }
+}
+
+.accordion__status--close:checked ~ .accordion__action--close {
+  display: none;
+}
+.accordion__status--open:checked ~ .accordion__action--open {
+  display: none;
+}
+
+
+.accordion__status--open:checked ~ .accordion__content {
+  max-height: 80vh;
+}
+
+

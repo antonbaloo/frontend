@@ -9,49 +9,185 @@
     <script src="./js/main.js" defer></script>
   </head>
   <body>
-    <form action="/test" method="get">
-     <label class="form__input">
-      <span>First name</span>
-      <input 
-      type="text" 
-      name="first-name"
-      value="Anton"
+    <form action="/test" method="get" class="form">
+      <label class="form__input">
+        <span>First name</span>
+        <input
+          class="form__text-input"
+          type="text"
+          name="first-name"
+          value="Andrei"
+          maxlength="15"
+        >
+      </label>
+      <label class="form__input">
+        <span>Date</span>
+        <input
+          class="form__text-input"
+          type="date"
+          name="first-name"
+        >
+      </label>
+      <label class="form__input">
+        <span>Color</span>
+        <input
+          class="form__text-input"
+          type="color"
+          name="first-name"
+        >
+      </label>
+      <label class="form__input">
+        <span>Phone number</span>
+        <input
+          class="form__text-input"
+          type="text"
+          name="phone-number"
+          placeholder="Phone number"
+          pattern="[\d]{3}-[0-9]{3}-[0-9]{2}"
+        >
+      </label>
+      <input
+        type="number"
+        name="first-name"
+        value="10"
+        min="0"
+        max="11"
       >
-    </label>
-      <input 
-      type="number" 
-      name="first-name"
-      value="10"
-      min="5"
-      max="15"
+      <input
+        type="email"
+        name="first-name"
+        placeholder="email"
+        required
       >
-      <label  class="form__input">
+      <input
+        type="text"
+        name="last-name"
+        placeholder="Last Name"
+      >
+      <label class="form__input">
         <span>Yes</span>
-      <input 
-      type="radio" 
-      name="first-name"
-      value="yes"
+      <input
+        type="radio"
+        name="radio"
+        value="yes"
       >
-    </label>
-
-      <input 
-      type="text" 
-      name="first-name"
-      value="Anton"
+      </label>
+      <label class="form__input">
+        <span>No</span>
+      <input
+        type="radio"
+        name="radio"
+        value="no"
       >
-
-
-      <input 
-      type="text" 
-      name="last-name"
-      placeholder="Last Name"
+      </label>
+      <label class="form__input">
+        <span>Not sure</span>
+      <input
+        type="radio"
+        name="radio"
+        value="not sure"
       >
-
-
+      </label>
+      <input
+        id="checkbox-yes"
+        type="checkbox"
+        name="checkbox"
+        value="yes"
+      >
+      <input
+        type="checkbox"
+        name="checkbox1"
+        value="no"
+      >
+      <input
+        type="checkbox"
+        name="checkbox2"
+        value="not sure"
+      >
+      <input list="datalist">
+      <datalist id="datalist">
+        <option value="Edge">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+      </datalist>
+      <textarea
+       name="text-area"
+       rows="5"
+       resize="none"
+       ></textarea>
       <input type="submit" value="Submit">
-      <button>Btn Submit</button>
+      <button class="form__submit">Btn submit</button>
+      <label for="checkbox-yes">Checkbox Yes</label>
     </form>
+    <h1>Hello world</h1>
+    <div class="input">
+      <input
+        type="radio"
+        class="input__input"
+        name="test"
+        value="yes"
+        id="radio-yes"
+        checked
+       >  
+       <label
+        class="input__label"
+        for="radio-yes"
+       >
+        Yes
+       </label>
+       <input
+        type="radio"
+        class="input__input"
+        name="test"
+        value="no"
+        id="radio-no"
+       >  
+       <label
+        class="input__label"
+        for="radio-no"
+       >
+        No
+       </label>
+    </div>
 
+    <section>
+      <h3>Accordion</h3>
+      <div class="accordion">
+        <input 
+        id="status--open" 
+        class="accordion__status--open" 
+        type="radio"
+        name="status">
+
+        <input 
+        id="status--close" 
+        class="accordion__status--close" 
+        type="radio"
+        name="status"
+        checked>
+
+        <label for="status--open" class="accordion__action--open">
+         show me more 
+        </label>
+        <label for="status--close" class="accordion__action--close">
+          show me less 
+         </label>
+
+        <div class="accordion__content">
+          <div>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel ut nisi quam rem
+           illum aperiam suscipit quos laborum inventore possimus itaque, maxime pariatur fugit corporis obcaecati, 
+          delectus veritatis ratione qui.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut nulla unde consectetur molestias rem, maiores doloribus, odio error eum aliquid veniam sed quod facere, 
+          atque eveniet quidem consequatur. Labore, rerum?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, debitis nisi? Quisquam beatae sequi quos, reiciendis, facere magnam illum, 
+          adipisci eos vero dolore alias ab consectetur. Officia doloremque molestias tenetur.
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
 
