@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import './partials/switcher_lists/list_hot.scss'
+
 body * {
   outline: 1px solid lightgrey;
 }
@@ -21,3 +24,36 @@ body * {
 .main-news__blocks {
   display: flex;
 }
+
+.switcher {
+  background-color: #d7d8d9;
+  display: flex;
+  height: 30px;
+  font-size: 18px;
+  font-family:'PT sans' ;
+
+  &__item1{
+    padding: 2px 10px;
+    position: relative;
+  }
+  &__item2 {
+    padding: 2px 10px; 
+    position: relative;
+  }
+  &__item3 {
+    padding: 2px 10px;
+    position: relative;
+
+  }
+}
+
+.list1 {
+  display: none;
+}
+
+.switcher__item1:hover {
+  content: '';
+  background-color: #333333;
+  color: #fff;
+}
+

@@ -1,0 +1,10 @@
+.switcher__item1:hover > .list1 {
+    content: '';
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    color: black;
+    top: 31px;
+    left: 1px;
+    width: calc(100% - 1px);
+  }
