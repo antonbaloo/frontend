@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-@import './partials/switcher_lists/list_hot.scss'
+@import './partials/switcher_lists/list_hot.scss';
+@import './partials/switcher_lists/list_EURO.scss';
+@import './partials/switcher_lists/list_Elclass.scss';
 
 body * {
   outline: 1px solid lightgrey;
@@ -51,6 +53,13 @@ body * {
   display: none;
 }
 
+.list2 {
+  display: none;
+}
+ 
+.list3 {
+  display: none;
+}
 .switcher__item1:hover {
   content: '';
   background-color: #333333;

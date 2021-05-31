@@ -1,0 +1,29 @@
+.list3 {
+    padding: 2px;
+    text-align: center;
+}
+
+
+.switcher__item3:hover > .list3 {
+    content: '';
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    color: black;
+    top: 31px;
+    left: 1px;
+    width: calc(100% - 1px);
+  }
+
+.list3__teams:hover {
+  content: '';
+  background-color: #333333;
+  color: #fff;
+  }
+
+.list3__points:hover {
+  content: '';
+  background-color: #333333;
+  color: #fff;
+  }
+

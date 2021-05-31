@@ -1,0 +1,28 @@
+.list2 {
+    padding: 2px;
+    text-align: center;
+}
+
+.switcher__item2:hover > .list2 {
+    content: '';
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    color: black;
+    top: 31px;
+    left: 1px;
+    width: calc(100% - 1px);
+  }
+
+.list2__winners:hover {
+  content: '';
+  background-color: #333333;
+  color: #fff;
+  }
+
+.list2__loosers:hover {
+  content: '';
+  background-color: #333333;
+  color: #fff;
+  }
+

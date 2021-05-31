@@ -1,3 +1,9 @@
+.list1 {
+  padding: 2px;
+  text-align: center;
+}
+
+
 .switcher__item1:hover > .list1 {
     content: '';
     display: block;
@@ -5,6 +11,30 @@
     position: absolute;
     color: black;
     top: 31px;
-    left: 1px;
+    left: -2px;
     width: calc(100% - 1px);
+  }
+
+.list1__footbal:hover {
+  content: '';
+  background-color: #333333;
+  color: #fff;
+  }
+
+.list1__NBA:hover {
+  content: '';
+  background-color: #333333;
+  color: #fff;
+  }
+
+.list1__NFL:hover {
+  content: '';
+  background-color: #333333;
+  color: #fff;
+  }
+  
+.list1__NHL:hover {
+  content: '';
+  background-color: #333333;
+  color: #fff;
   }
