@@ -4,7 +4,7 @@
 @import './partials/switcher_lists/list_Elclass.scss';
 
 body * {
-  outline: 1px solid lightgrey;
+  //outline: 1px solid lightgrey;
 }
 
 .content {
@@ -66,3 +66,63 @@ body * {
   color: #fff;
 }
 
+.main--slider {
+display: flex;
+border-bottom: 4px solid tomato;;
+margin-top: 20px;
+}
+
+.title__text {
+margin:  10px 20px;
+font-size: 30px;
+color: red;
+font-family: serif;
+}
+
+.under__text {
+  font-size: 14px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 30px 10px;
+}
+
+.main--slider__pict {
+  flex-basis: 60%;
+  background-image: url(/img/news/cloopp_pict.png);
+  background-size: cover;
+  
+}
+
+.main--slider__text {
+  flex-basis: 40%;
+ // position: relative;
+}
+
+.main--slider__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end ;
+  padding-top: 5px;
+  box-sizing: border-box;
+  font-style: bold;
+  font-size: 18px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ 
+.pict-round {
+  display: block;
+  height: 100%;
+  margin: 0 5px;
+  
+}
+
+.fa-chevron-left {
+  margin: auto 5px;
+  color: red;
+  font-size: 20px;
+}
+
+.fa-chevron-right {
+  margin: auto 5px;
+  color: red;
+  font-size: 20px;
+}
