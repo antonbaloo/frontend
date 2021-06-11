@@ -1,0 +1,21 @@
+
+
+.sprite {
+    width: 50px; 
+    height: 50px;
+    background: url('./img/sprite.png');
+    background-position: 0;
+    margin:  10px 10px;
+}
+
+.basket {
+    background-position: -10px -10px;
+}
+
+.account{
+     background-position: -80px -10px;
+}
+
+.help {
+    background-position: -10px -80px;
+}
