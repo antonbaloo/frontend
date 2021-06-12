@@ -19,9 +19,12 @@ p {
 .header {
   position: relative;
   height: 100px;
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   background-color: #dbd6cc;
+  opacity: 0.9;
 }
 
 .navigation {
@@ -71,7 +74,27 @@ display: flex;
 }
 
 .banner {
+  position: absolute;
   width: 100%;
-  height: 400px;
+  height:800px ;
+  box-sizing: border-box;
   background-image: url('./img/banner.jpeg');
+  //background-image: url('./img/banner 2.jpeg');;
+  background-position: fixed;
+  background-size:contain;
+  background-repeat: no-repeat;
+  z-index: 0;
 }
+
+.info-window {
+  position: relative;
+  box-sizing: border-box;
+  width: 450px;
+  height: 150px;
+  margin: 15%  auto;
+  background-color:#dbd6cc ;
+  border-radius: 10px;
+  border: olivedrab solid 2px;
+  z-index: 1;
+}
+
