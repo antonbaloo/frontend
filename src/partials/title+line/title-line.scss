@@ -1,0 +1,44 @@
+.we_have {
+    width: 80%;
+    margin: 0 auto;  
+    overflow: hidden;
+    position: relative;
+    margin-top: 25px;
+    font-size: 50px;
+    font-family: 'Josefin sans' ;
+  
+    &--text {
+      display: block ;
+      width: fit-content;
+      background-color: #fff;
+      padding: 0 10px;
+    }
+  }
+  
+  .we_have--text::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    border-bottom: 3px solid black;
+    z-index: -1;
+  }
+
+  .right-title {
+      margin-right: 0;
+      margin-bottom: 20px;
+
+  }
+
+  .left-title {
+      margin-left: 0;
+      margin-bottom: 20px;
+
+  }
+ 
+  .center-title {
+      margin:  auto;
+      margin-bottom: 20px;
+  }

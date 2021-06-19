@@ -12,27 +12,26 @@
   </head>
   <body>
   <div class="banner">
-  </div>
+ 
     <div class="contentbox">
     <header class="header">
-        <div class="navigation">
-         <div  class="navigation__item shop">
-          <p>Shop</p>
-          </div>
-          <div  class="navigation__item birth">
-          <p>BirthDay</p>
-         </div>
-         <div  class="navigation__item subsc">
-          <p>Subscribe</p>
-          <p> on us</p>
-        </div>
-        <div  class="navigation__item about">
-          <p>About Us</p>
-        </div>
-        <div  class="navigation__item deliv">
-          <p>Delivery</p>
-        </div>
-      </div>
+        <ul class="navig">
+            <li class="navig__item shop">
+              Shop
+            </li>
+            <li class="navig__item birth">
+              BirthDay
+            </li>
+            <li class="navig__item subsc">
+              Subscribe on Us
+            </li>
+            <li class="navig__item about">
+              About Us
+            </li>
+            <li class="navig__item deliv">
+              Delivery
+            </li>
+          </ul>
       <div class="logo">
         <p class="logo__blossom">Blossom</p>
         <p class="logo__depot">Depot</p>
@@ -54,20 +53,42 @@
         })
       </div>
     </header>
-  </div>
-    <div class="info-window">
-      <p>
-        Delight yourself every Shabbat with a new bouquet. 
-        You don't have to go to a flower shop. 
-        Just tell us and we will take care of everything
-      </p>
-      <button>  Subscribe on us </button>
-    
-
-      
-
+    <div class="info__window">
+      <div class="info__window--text">
+      <span>Delight yourself every Shabbat with a new bouquet. </span>
+      <span>You don't have to go to a flower shop. </span>
+      <span>Just tell us and we will take care of everything </span>
     </div>
+      <button class="info__window--iwant">  I want it 
+      </button>
+    </div>
+  
+  </div>
+</div>
+  <div class="we_have">
+  @@include('./partials/title+line/_title.html',
+  {
+    "side": "center-title"
+  })
+   </div>
   </body>
+  <div class="contentbox">
+    <div class="exampl_board"> 
+      <div class="item">
+        @@include('./partials/bouquet/_bouquet.html',
+        {
+          "imageBouquet": "./img/bouquets/01.JPG",
+          "name": "Longnamelongname",
+          "price": "50$"
+        })
+      </div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+  </div>
 </html>
 
 

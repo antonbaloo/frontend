@@ -1,0 +1,45 @@
+
+ .imageBouquets {
+     margin: 10px 10px;
+ }
+
+ .imageBouquet__item{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+
+.name-Bouq {
+    width: fit-content;
+    padding-bottom: 10px;
+    border-bottom: 2px solid lightgray;
+    font-family: 'Josefin sans' ;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.bot-line {
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.price {
+    font-family: 'Josefin sans' ;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.price::before {
+    font-family: 'Josefin sans' ;
+    font-size: 30px;
+    content: 'Price:';
+}
+
+.fa-shopping-basket {
+    font-size: 30px;
+}
