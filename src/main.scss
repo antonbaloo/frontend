@@ -23,9 +23,7 @@ p {
   height:700px ;
   // background-image: url('./img/banner.jpeg');
   background-image: url('./img/banner 2.jpeg');;
-  // background-position: fixed;
   background-size:cover;
-  // background-repeat: no-repeat;
   z-index: 0;
   border: 0.1px solid transparent;
 }
@@ -177,7 +175,7 @@ flex-wrap: wrap;
   display: flex;
   justify-content: center;
 
-  &__item {
+  &__unit {
     margin: 0 20px;
     background-color: #fff;
     padding: 35px 15px;
@@ -185,9 +183,7 @@ flex-wrap: wrap;
   }
 }
 
-.item__pict {
-  width: fit-content;
-  box-sizing: border-box;
+.unit__pict {
   background-color: #d5dfc2;
   margin: 0 60px;
   border-radius: 50%;
@@ -201,10 +197,16 @@ flex-wrap: wrap;
   font-size: 40px;
 }
 
-.item__title {
+.unit{
   margin: 20px auto;
   text-align: center;
   width: fit-content;
-  
-  @include: mainColorTitle(20px);
+
+&__title { 
+  @include mainFontTitle(20px);
+}
+
+&__text {
+  @include mainFontText (15px);
+}
 }

@@ -1,4 +1,9 @@
-@mixin mainColorTitle ($fz: 20px)  {
+@mixin mainFontTitle ($fz: 20px)  {
     font-family: 'Josefin sans' ;
+    font-size: $fz;
+}
+
+@mixin mainFontText ($fz: 20px) {
+    font-family: 'Bitter', serif;
     font-size: $fz;
 }
