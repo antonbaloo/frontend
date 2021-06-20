@@ -59,7 +59,7 @@
       <span>You don't have to go to a flower shop. </span>
       <span>Just tell us and we will take care of everything </span>
     </div>
-      <button class="info__window--iwant">  I want it 
+      <button class="buttn__iwant">  I want it 
       </button>
     </div>
   
@@ -82,12 +82,85 @@
           "price": "50$"
         })
       </div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
+      <div class="item">
+        @@include('./partials/bouquet/_bouquet.html',
+        {
+          "imageBouquet": "./img/bouquets/02.JPG",
+          "name": "Longnamelongname",
+          "price": "50$"
+        })
+
+      </div>
+      <div class="item">
+        @@include('./partials/bouquet/_bouquet.html',
+        {
+          "imageBouquet": "./img/bouquets/03.JPG",
+          "name": "Longnamelongname",
+          "price": "50$"
+        })
+
+      </div>
+      <div class="item">
+       @@include('./partials/bouquet/_bouquet.html',
+        {
+          "imageBouquet": "./img/bouquets/04.JPG",
+          "name": "Longnamelongname",
+          "price": "50$"
+        })
+
+      </div>
+      <div class="item">
+                @@include('./partials/bouquet/_bouquet.html',
+        {
+          "imageBouquet": "./img/bouquets/05.jpeg",
+          "name": "Longnamelongname",
+          "price": "50$"
+        })
+
+      </div>
+      <div class="item">
+                @@include('./partials/bouquet/_bouquet.html',
+        {
+          "imageBouquet": "./img/bouquets/06.jpeg",
+          "name": "Longnamelongname",
+          "price": "50$"
+        })
+
+      </div>
     </div>
+    <button class="buttn__goshop">
+      Watch more...
+    </button>
+      <div class="wrapper__subscription">
+        <div class="subscription subscription__title">
+          Flower Subscriptions
+        </div>
+        <div class="subscription subscription__title2">
+          SUBSCRIBE & SAVE
+        </div>
+        <div class="subscription subscription__text">
+          <p>A new way to gift fam & friends in one subscription. Switch up recipients to</p> 
+          <p>cover Birthdays, Thank You’s, Just Because & more!</p>
+        </div>
+        <div class="threeitembox">
+          <div class="threeitembox__item">
+            <div class="item__pict">
+              pict
+            </div>
+            <div class="item__title">
+              30% Off + Free Shipping
+            </div>
+            <div class="item__text">
+              <p>Starting at $36/mo. Plus, get $120 credit/year</p> 
+              <p> regular orders.</p>
+            </div>
+          </div>
+          <div class="threeitembox__item">2</div>
+          <div class="threeitembox__item">3</div>
+
+        </div>
+      </div>
+
   </div>
 </html>
 
