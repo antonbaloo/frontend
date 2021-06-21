@@ -1,0 +1,31 @@
+.unit__pict {
+    background-color: #d5dfc2;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: fit-content;
+    
+    &--content {
+     padding: 45px 50px;
+     text-align: center;
+    }
+  }
+  
+ .font {
+    font-size: 40px;
+    color: black;
+  }
+  
+  .unit{
+    margin: 20px auto;
+    text-align: center;
+    width: fit-content;
+  
+  &__title { 
+    @include mainFontTitle(20px);
+  }
+  
+  &__text {
+    @include mainFontText (15px);
+  }
+  }
+  

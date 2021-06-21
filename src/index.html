@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="./main.scss">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Lora:ital@1&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <title>First project</title>
     <script src="https://kit.fontawesome.com/926ed00444.js" crossorigin="anonymous"></script>
     <script src="./js/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
   </head>
   <body>
   <div class="banner">
@@ -65,13 +67,16 @@
   
   </div>
 </div>
-  <div class="we_have">
+  <div class="wehave">
+
   @@include('./partials/title+line/_title.html',
   {
-    "side": "center-title"
+    "side": "center-linebox",
+    "titleText": "Look what we have"
   })
-   </div>
-  </body>
+  
+  </div>
+
   <div class="contentbox">
     <div class="exampl_board"> 
       <div class="item">
@@ -144,26 +149,114 @@
         </div>
         <div class="threeitembox">
           <div class="threeitembox__unit">
-            <div class="unit__pict">
-              <div class="unit__pict--content">
-                <i class="fas fa-percent"></i>
-              </div>
-            </div>
-            <div class="unit unit__title">
-              30% Off + Free Shipping
-            </div>
-            <div class="unit unit__text">
-              <p>Starting at $36/mo. Plus, get $120 credit/year on
-             regular orders.
-            </div>
+            @@include('./partials/threeitembox/_threeitembox.html',
+            {
+              "icon": "fas fa-percent",
+              "unitTitle": "30% Off + Free Shipping",
+              "unitText": "Starting at $36/mo. Plus, get $120 credit/year on regular orders."
+            })
           </div>
-          <div class="threeitembox__unit">2</div>
-          <div class="threeitembox__unit">3</div>
+          <div class="threeitembox__unit">
+            @@include('./partials/threeitembox/_threeitembox.html',
+            {
+              "icon": "fab fa-pagelines",
+              "unitTitle": "FRESHEST BLOOMS",
+              "unitText": "Exclusive farm-fresh flowers with our Happiness Guarantee."
+            })
+          </div>
+          <div class="threeitembox__unit">
+            @@include('./partials/threeitembox/_threeitembox.html',
+            {
+              "icon": "far fa-calendar-alt",
+              "unitTitle": "SUPER FLEXIBLE",
+              "unitText": "Customize recipient, date, or flowers. Skip or cancel anytime."
+            })
+         </div>
 
         </div>
       </div>
+      <div class="what-telling">
+          @@include('./partials/title+line/_title.html',
+          {
+            "side": "left-linebox",
+            "titleText": "What clients say about us ..."
+          })
+      </div>
+      <div class="slider__comments">
+        <div class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                @@include('./partials/comments/_comments.html', 
+                {
+                  "commentText": "Lorem",
+                  "custName": "namename"
+                })
+              </li>
+              <li class="splide__slide">
+                @@include('./partials/comments/_comments.html', 
+                {
+                  "commentText": "Lorem",
+                  "custName": "namename"
+                })
+              </li>
+              <li class="splide__slide">
+                @@include('./partials/comments/_comments.html', 
+                {
+                  "commentText": "Lorem",
+                  "custName": "namename"
+                })
 
+              </li>
+              <li class="splide__slide">
+                @@include('./partials/comments/_comments.html', 
+                {
+                  "commentText": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti voluptate fugiat commodi beatae dolorum ex officia, exercitationem eum atque. Esse perferendis nostrum,
+                                     obcaecati sit necessitatibus fugit architecto officiis quae facere",
+                  "custName": "namename"
+                })
+
+              </li>
+              <li class="splide__slide">
+                @@include('./partials/comments/_comments.html', 
+                {
+                  "commentText": "Lorem",
+                  "custName": "namename"
+                })
+
+              </li>
+              <li class="splide__slide">
+                @@include('./partials/comments/_comments.html', 
+                {
+                  "commentText": "Lorem",
+                  "custName": "namename"
+                })
+
+              </li>
+              <li class="splide__slide">
+                @@include('./partials/comments/_comments.html', 
+                {
+                  "commentText": "Lorem",
+                  "custName": "namename"
+                })
+
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <script>
+	        new Splide( '.splide',{
+            type: 'loop',
+            perPage: 5,
+            perMove: 1,
+            focus: 'center',
+            gap: '1em',
+          } ).mount();
+        </script>
+      </div>
   </div>
+</body>
 </html>
 
 

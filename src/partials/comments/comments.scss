@@ -1,0 +1,37 @@
+.comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 5px 5px;
+    height: 100%;
+    
+    &__text {
+      text-align: justify;
+      text-indent: 30px;
+      height: 150px;
+      @include mainFontText (15px)
+    }
+    
+    &__customer {
+      text-align: center;
+      text-transform: uppercase;
+      @include mainFontTitle (25px)
+    }
+  
+  
+    &__quote--top {
+      font-size: 30px;
+      margin: 0 10px;
+      text-align: start;
+      @include mainColorTheme
+      
+    }
+  
+    &__quote--bottom {
+      text-align: end;
+      font-size: 30px;
+      margin: 0 10px;
+      @include mainColorTheme
+    }
+  
+  }

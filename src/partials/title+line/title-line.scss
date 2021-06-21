@@ -1,21 +1,23 @@
-.we_have {
-    width: 80%;
-    margin: 0 auto;  
+.text__linebox {
+    width: 100%;
+    // margin: 0 auto;  
     overflow: hidden;
     position: relative;
     margin-top: 25px;
     font-size: 50px;
     font-family: 'Josefin sans' ;
+    padding-top: 20px;
   
     &--text {
       display: block ;
       width: fit-content;
       background-color: #fff;
       padding: 0 10px;
+      text-align: center;
     }
   }
   
-  .we_have--text::after {
+  .text__linebox--text::after {
     display: block;
     content: '';
     position: absolute;
@@ -26,19 +28,19 @@
     z-index: -1;
   }
 
-  .right-title {
+  .right-linebox {
       margin-right: 0;
       margin-bottom: 20px;
 
   }
 
-  .left-title {
+  .left-linebox{
       margin-left: 0;
       margin-bottom: 20px;
 
   }
  
-  .center-title {
+  .center-linebox{
       margin:  auto;
       margin-bottom: 20px;
   }

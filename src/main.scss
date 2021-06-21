@@ -5,6 +5,8 @@
 @import "./partials/title+line/title-line.scss";
 @import "./partials/bouquet/bouquet.scss";
 @import "./variables.scss";
+@import "./partials/threeitembox/threeitembox.scss";
+@import "./partials/comments/comments.scss";
 
 body * {
   outline: 1px solid lightgrey;
@@ -173,6 +175,7 @@ flex-wrap: wrap;
 .threeitembox {
   margin: 50px auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 
   &__unit {
@@ -183,30 +186,55 @@ flex-wrap: wrap;
   }
 }
 
-.unit__pict {
-  background-color: #d5dfc2;
-  margin: 0 60px;
-  border-radius: 50%;
+.splide__slide {
+  width: 25%;
+  height: 300px;
+}
+
+.splide__pagination  {
+  display: none !important;
+}
+
+.what-telling {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+// here start box for comments
+.comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 5px 5px;
+  height: 100%;
   
-  &--content {
-   padding: 50px;
+  &__text {
+    text-align: justify;
+    text-indent: 30px;
+    @include mainFontText (15px)
   }
+  
+  &__customer {
+    text-align: center;
+    text-transform: uppercase;
+    @include mainFontTitle (25px)
+  }
+
+
+  &__quote--top {
+    font-size: 30px;
+    margin: 0 10px;
+    text-align: start;
+    @include mainColorTheme
+    
+  }
+
+  &__quote--bottom {
+    text-align: end;
+    font-size: 30px;
+    margin: 0 10px;
+    @include mainColorTheme
+  }
+
 }
 
-.fa-percent {
-  font-size: 40px;
-}
-
-.unit{
-  margin: 20px auto;
-  text-align: center;
-  width: fit-content;
-
-&__title { 
-  @include mainFontTitle(20px);
-}
-
-&__text {
-  @include mainFontText (15px);
-}
-}
