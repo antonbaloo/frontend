@@ -186,9 +186,14 @@ flex-wrap: wrap;
   }
 }
 
+.slider__comments {
+  margin-bottom: 20px;
+}
+
 .splide__slide {
   width: 25%;
   height: 300px;
+
 }
 
 .splide__pagination  {
@@ -197,44 +202,14 @@ flex-wrap: wrap;
 
 .what-telling {
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
-// here start box for comments
-.comment {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 5px 5px;
-  height: 100%;
-  
-  &__text {
-    text-align: justify;
-    text-indent: 30px;
-    @include mainFontText (15px)
-  }
-  
-  &__customer {
-    text-align: center;
-    text-transform: uppercase;
-    @include mainFontTitle (25px)
-  }
-
-
-  &__quote--top {
-    font-size: 30px;
-    margin: 0 10px;
-    text-align: start;
-    @include mainColorTheme
-    
-  }
-
-  &__quote--bottom {
-    text-align: end;
-    font-size: 30px;
-    margin: 0 10px;
-    @include mainColorTheme
-  }
-
+footer {
+  height: 300px;
+  width: 100%;
+  background-color: $color;
+  padding:50px ;
 }
+
 
