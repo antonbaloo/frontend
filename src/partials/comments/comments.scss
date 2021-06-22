@@ -4,16 +4,22 @@
     justify-content: space-around;
     margin: 5px 5px;
     height: 100%;
-    word-wrap: break-word;
+    text-overflow: ellipsis;
+  
+
     
     &__text {
+      display: block;
       text-align: justify;
       text-indent: 30px;
-      height: 150px;
+      min-height: 150px;
+      word-wrap: break-word;
+      border-bottom: 0.1px transparent;
       @include mainFontText (15px)
     }
     
     &__customer {
+      display: block;
       text-align: center;
       text-transform: uppercase;
       @include mainFontTitle (25px)
