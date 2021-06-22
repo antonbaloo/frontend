@@ -9,7 +9,7 @@
 @import "./partials/comments/comments.scss";
 
 body * {
-  outline: 1px solid lightgrey;
+  // outline: 1px solid lightgrey;
 }
 
 .contentbox {
@@ -213,3 +213,28 @@ footer {
 }
 
 
+// here start accordeon
+
+.FAQ__box {
+  border: 4px solid $color;
+  margin: 4px;
+}
+
+.accardion {
+  &__status {
+    display: none;
+  }
+
+  &__opener {
+    display: block;
+  }
+
+&__content {
+  max-height: 0px;
+  overflow: hidden;
+}
+}
+
+.accardion__status:checked ~ .accardion__content {
+  max-height: fit-content;
+}
